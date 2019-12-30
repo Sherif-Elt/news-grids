@@ -1,0 +1,307 @@
+.container {
+  max-width: 1024px;
+  padding: 0rem 2rem;
+  overflow: hidden;
+  margin: auto; }
+
+.category {
+  display: inline-block;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.50rem;
+  text-align: center;
+  border-radius: 15px;
+  text-transform: uppercase; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  align-items: center;
+  border: none;
+  background: #333;
+  color: white;
+  margin-top: 1rem; }
+
+.btn-primary {
+  background: #c72727;
+  color: white; }
+  .btn-primary:hover {
+    background: #a90707; }
+
+.btn-secondary {
+  background: #f99500;
+  color: white; }
+  .btn-secondary:hover {
+    background: #f48600; }
+
+.btn-dark {
+  background: #333;
+  color: white; }
+  .btn-dark:hover {
+    background: #222; }
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+.bg-primary {
+  background: #c72727;
+  color: white; }
+
+.bg-secondary {
+  background: #f99500;
+  color: white; }
+
+.bg-light {
+  background: white;
+  color: #333; }
+
+.bg-dark {
+  background: #333;
+  color: white; }
+
+.bg-medium {
+  background: #f3f3f3; }
+
+.bg-ent {
+  background: #a66bbe;
+  color: white; }
+
+.bg-tech {
+  background: #009cff;
+  color: white; }
+
+.py-1 {
+  padding: 1.5rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.p-1 {
+  padding: 1rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+.l-heading {
+  font-size: 3rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  background: #f3f3f3; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 0.5rem; }
+
+.nav {
+  display: none; }
+
+.container {
+  max-width: 1024px;
+  margin: auto; }
+
+.nav h2 {
+  float: left;
+  color: white;
+  margin: 0rem 0rem 0rem 2.5rem; }
+
+.nav {
+  text-align: right;
+  line-height: 50px;
+  height: 50px;
+  background: #333; }
+
+.menu {
+  margin: 0rem 2rem 0rem 0rem; }
+
+.menu a {
+  text-decoration: none;
+  margin: 0rem 0.5rem 0rem 0rem;
+  line-height: 50px;
+  padding: 1rem 1rem;
+  color: white; }
+
+.menu a:hover {
+  background: #c72727;
+  color: white; }
+
+label {
+  margin: 0rem 2rem 0rem 0rem;
+  font-size: 1.8rem;
+  line-height: 50px;
+  display: none;
+  cursor: pointer;
+  color: white; }
+
+#toggle {
+  display: none;
+  cursor: pointer; }
+
+#navbar {
+  padding: 1rem 0rem;
+  background: white; }
+  #navbar .container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    align-items: center; }
+  #navbar .logo {
+    width: 150px; }
+  #navbar .social i {
+    color: #777;
+    margin-left: 0.5rem; }
+    #navbar .social i:hover {
+      color: #555; }
+  #navbar ul {
+    display: flex;
+    justify-self: end; }
+    #navbar ul li a {
+      display: inline-block;
+      color: #333;
+      padding: 0.7rem; }
+      #navbar ul li a:hover {
+        background: #f3f3f3; }
+      #navbar ul li a.current {
+        background: #c72727;
+        color: white; }
+
+#showcase {
+  color: white;
+  background: #333;
+  padding: 2rem;
+  position: relative; }
+  #showcase::before {
+    content: '';
+    background: url(/dist/images/featured.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; }
+  #showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50vh;
+    align-items: center; }
+    #showcase .showcase-container .showcase-content {
+      z-index: 1; }
+    #showcase .showcase-container p {
+      margin-bottom: 1rem; }
+
+#articles-home a {
+  color: #333; }
+
+#articles-home p {
+  margin-bottom: 0.5rem; }
+
+#articles-home h2, #articles-home h3 {
+  margin-top: 0.5rem; }
+
+#articles-home .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+  #articles-home .articles-container > *:first-child, #articles-home .articles-container > *:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / span 2;
+    grid-gap: 1rem; }
+  #articles-home .articles-container > *:last-child {
+    grid-column: 2 / span 2; }
+  #articles-home .articles-container img {
+    width: 100%; }
+  #articles-home .articles-container .bg-dark a {
+    color: white; }
+  #articles-home .articles-container .bg-primary a {
+    color: white; }
+
+#about .page-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem; }
+  #about .page-container .card {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4; }
+
+#article img {
+  width: 100%; }
+
+#article .article-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem; }
+  #article .article-page .card {
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 4; }
+  #article .article-page .meta {
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    align-items: center;
+    margin-bottom: 1rem; }
+
+#article aside li {
+  border-bottom: 1px #797979 dotted;
+  padding: 0.5rem 0rem; }
+  #article aside li a:hover {
+    color: #c72727; }
+
+#article aside a {
+  width: 100%; }
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem; }
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1 / span 4;
+    background: #444;
+    text-align: center;
+    padding: 0.5rem; }
+    #main-footer .footer-container > *:last-child p {
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 0.4rem; }
+  #main-footer .footer-container img {
+    width: 150px;
+    margin-bottom: 1rem; }
+  #main-footer .footer-container li {
+    border-bottom: 1px #797979 dotted;
+    padding: 0.5rem 0rem; }
+    #main-footer .footer-container li a {
+      color: white;
+      font-size: 0.85rem; }
+      #main-footer .footer-container li a:hover {
+        color: #c72727; }
+  #main-footer .footer-container p {
+    font-size: 0.85rem; }
+  #main-footer .footer-container input[type="email"] {
+    width: 90%;
+    padding: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: -0.5rem; }
+  #main-footer .footer-container button {
+    width: 90%; }
