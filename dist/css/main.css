@@ -193,7 +193,7 @@ label {
   position: relative; }
   #showcase::before {
     content: '';
-    background: url(/dist/images/featured.jpg) no-repeat center center/cover;
+    background: url("/dist/images/featured.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;

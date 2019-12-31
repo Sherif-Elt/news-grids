@@ -193,7 +193,7 @@ img {
     #main-footer .footer-container > *:first-child img {
       margin: auto auto 1rem 0; }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   .showcase-container p {
     font-size: 0.80rem; }
   .showcase-container h1 {
